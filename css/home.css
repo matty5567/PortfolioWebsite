@@ -1,0 +1,133 @@
+body {
+    background-color: #0a192f;
+    margin: 0;
+}
+
+.section-title {
+    color: #ccd6f6;
+    font-size: 40;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.section-large-font {
+    color: #8892b0;
+    font-size: 40;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.content {
+    margin: auto;
+    padding: 10px;
+}
+
+.chapter {
+    height: 100vh;
+    width:60%;
+    margin:auto;
+
+}
+
+.intro-text {
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.chapter-content{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    background: #0a192f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #495670; 
+    border: 3px solid #0a192f;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    column-gap:20px;
+    row-gap: 20px;
+}
+.grid-item {
+    background-color: #112240;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    transform: scale(1.1)
+}
+
+.grid-title {
+    color: white;
+
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15;
+}
+
+.project-top {
+    width: 20 px;
+    height: 20px;
+    margin-right:-10px
+}
+
+.project-top {
+    display: flex;
+    color: #495670;
+}
+
+.my-projects-title {
+    font-size: 40;
+    color: #64ffda;
+    text-align:center;
+}
+
+.project-title {
+    font-size: 20;
+    color: #ccd6f6;
+}
+
+.project-description {
+    font-size: 15;
+    color: #a8b2d1;
+    ;
+}
+
+:root {
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.project-tech-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15;
+    color: #495670;
+}

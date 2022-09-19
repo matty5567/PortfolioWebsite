@@ -16,14 +16,23 @@ body {
 }
 
 .content {
-    margin: auto;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .chapter {
     height: 100vh;
-    width:60%;
-    margin:auto;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -33,9 +42,23 @@ body {
 }
 
 .chapter-content{
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%)
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.welcome-text {
+    float:left
+}
+
+.welcome-image {
+    float: right;
+    margin-left: 40px;
+    border-radius: 5px;
 }
 
 html {
@@ -63,7 +86,7 @@ html {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     padding: 10px;
     column-gap:20px;
     row-gap: 20px;
@@ -72,11 +95,18 @@ html {
     background-color: #112240;
     padding: 15px;
     font-size: 30px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 .grid-item:hover {
-    transform: scale(1.1)
+    transform: scale(1.05)   
+}
+
+.grid-item:hover .project-title {
+    color:#64ffda;
 }
 
 .grid-title {
@@ -85,12 +115,6 @@ html {
 }
 
 
-.project {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 15;
-}
 
 .project-top {
     width: 20 px;
@@ -110,6 +134,7 @@ html {
 }
 
 .project-title {
+    text-align: center;
     font-size: 20;
     color: #ccd6f6;
 }
@@ -125,9 +150,34 @@ html {
 }
 
 .project-tech-list{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
     font-size: 15;
     color: #495670;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+
+}
+
+.project {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+li {
+    display: inline;
+    padding-right: 10px;
+    align-items: flex-end;
 }

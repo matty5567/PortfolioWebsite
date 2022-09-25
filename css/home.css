@@ -3,10 +3,23 @@ body {
     margin: 0;
 }
 
+.vertical-line {
+    content: "";
+    display: block;
+    width:  2px;
+    height: 150px;
+    margin: 0px auto;
+    margin-top: 10px;
+    background-color: #a8b2d1;
+}
+
 .section-title {
     color: #ccd6f6;
     font-size: 40;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    margin-top: -30;
+    margin-bottom: -30;
+    padding:0;
 }
 
 .section-large-font {
@@ -15,11 +28,25 @@ body {
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
-.content {
+.chapter-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     justify-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.side-bar{
+    position: fixed;
+    bottom: 0;
+    margin-left: 25px;
+    width: 25px;
+    
 }
 
 .welcome-content {
@@ -32,12 +59,17 @@ body {
 .chapter {
     height: 100vh;
     display: flex;
+    justify-items: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top:8rem
 
 }
 
 .intro-text {
     color: #64ffda;
+    font-size: 20;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
@@ -45,20 +77,25 @@ body {
     display: flex;
     align-content: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    margin: 0 100 0 100;
 }
 
-
+.work-experience-header {
+    display: flex;
+    flex-direction: row;
+}
 
 .welcome-text {
-    float:left
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
 }
 
 .welcome-image {
     float: right;
     margin-left: 40px;
-    border-radius: 5px;
+    border-radius: 70%;
 }
 
 html {
@@ -88,8 +125,8 @@ html {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding: 10px;
-    column-gap:20px;
-    row-gap: 20px;
+    column-gap:30px;
+    row-gap: 30px;
 }
 .grid-item {
     background-color: #112240;
@@ -180,4 +217,189 @@ li {
     display: inline;
     padding-right: 10px;
     align-items: flex-end;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    justify-items: left;
+    color: #ccd6f6;
+    padding: 0 0 0 50px;
+}
+
+.about-me-para {
+    font-size: 20;
+    color: #ccd6f6;
+    text-align: left;
+}
+
+.about-me-title {
+    font-size: 30;
+    color: #64ffda;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heading-line {
+    content: "";
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #8892b0;
+}
+
+.about-me-image {
+    width:400;
+    height:400;
+    border-radius: 5%;
+    margin: auto;
+}
+
+.about-me-content {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-around;
+    padding: 0 20 0 50;
+    grid-template-columns: 50% 50%;
+}
+
+
+.kubrick-training {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work-experience-chapter-title {
+    color: #64ffda;
+    font-size: 40;
+    grid-template-columns: 50% 50%;
+}
+
+.work-experience-title {
+    color:#ccd6f6;
+    font-size: 20;
+    display: flex;
+    flex-direction: row;
+}
+
+.work-experience-header {
+    color: #64ffda;
+    font-size: 30;
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    justify-content: flex-start;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.work-experience-grid-item {
+    color:#ccd6f6;
+    font-size: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.work-experience-logo-grid {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 33% 33% 33%;
+    column-gap:20px;
+    row-gap: 60px;
+}
+
+.work-experience-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-experience-description {
+    color: #ccd6f6;
+    font-size: 20;
+}
+
+.kubrick-training-text {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    flex:1.5
+}
+
+.workplace-title {
+    font-size: 25;
+    color: #64ffda;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.this-site-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100;
+    justify-items: space-around;
+    align-items: center;
+}
+
+.this-site-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.this-site-header {
+    font-size: 30;
+    color: #64ffda;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.site-desciption {
+    font-size: 30;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #ccd6f6;
+    text-align: left;
+    margin-left: 50;
+}
+
+.site-para-top {
+    font-size: 30;
+    color: #ccd6f6;
+    text-align: left;
+    margin-left: 50;
+}
+
+.site-para-bottom {
+    font-size: 20;
+    color: #ccd6f6;
+    text-align: left;
+    margin-left: 50;
+}
+
+.pi-image {
+    display: flex;
+    width: 40%;
+}
+
+.portfolio-code-link {
+    color:#64ffda
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
 }

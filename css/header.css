@@ -1,8 +1,11 @@
 /* Add a black background color to the top navigation */
 .topnav {
     position: fixed;
-    padding: 40px;
+    padding: 20px;
     width:90%;
+    transition: top 0.2s ease-in-out;
+    top: 0;
+    background-color: rgba(10, 25, 47, 0.9);
   }
   
   /* Style the links inside the navigation bar */

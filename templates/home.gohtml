@@ -5,155 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/home.css">
     <title>Matthew Hiscocks</title>
+    
 </head>
 <body>
+
     {{template "header"}}
-
     <div class="content">
-        <section id="welcome" class="chapter">
-            <div class="welcome-content">
-                <div class="welcome-text">
-                    <div class = intro-text>
-                        <p>
-                            Hi, my name is
-                        </p>
-                    </div>
-                    <div class="section-title">
-                        <h2>Matthew Hiscocks</h2>
-                    </div>
-                </div>
-                <div class="welcome-image">
-                    <div>
-                        <img src="/images/headshot.jpg" alt="headshot" width="200" height="200">
-                </div>
-            </div>
-
-            
-        </section>
-        <section id="about" class="chapter">
-            <div class="section-title">
-                <p>About Me</p>
-        </section>
-        <section id="projects" class="chapter">
-            <div class="chapter-content">
-                <div>
-                    <h2 class="my-projects-title">
-                        My Personal Projects
-                
-                    </h2>
-                </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <div class="project">
-                            <header>
-                                <h3 class="project-title">
-                                    Neural Networks From Scratch
-                                </h3>
-                                <p class="project-description">
-                                    Classifying digits using deep learning written only the standard library.
-                                </p>
-                            </header>
-                            <footer class="project-footer">
-                                <ul class="project-tech-list">
-                                    <li>C++</li>
-                                </ul>
-                            </footer>
+        <div class="side-bar">
+            <a target="_blank" rel="noreferrer noopener" href="https://github.com/matty5567?tab=repositories">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#a8b2d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <div class="vertical-line"></div>
+        </div>
+        <div class="chapter-content">
+            <section id="welcome" class="chapter">
+                <div class="welcome-content">
+                    <div class="welcome-text">
+                        <div class = intro-text>
+                            <p>
+                                Hi, my name is
+                            </p>
+                        </div>
+                        <div class="section-title">
+                            <h2>Matthew Hiscocks</h2>
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="project">
-                            <header>
-                            <h3 class="project-title">
-                                Mandlebrot Renderer
-                            </h3>
-                            <p class="project-description">
-                                Rendering the Mandlebrot Fractal using parallel threads.
+
+                    <img src="/images/headshot.jpg" class="welcome-image" alt="headshot" width="200" height="200">
+
+
+                
+            </section>
+            <section id="about" class="chapter">
+                <div class="about-me-content">
+                    <div class="about-me-text">
+                        <div class="about-me-title">
+                            <h2>About Me</h2>
+                            <div class="heading-line"></div>
+                        </div>
+                        <p class="about-me-para">
+                            After graduating from LSE with a degree in Maths and Economics, I decided to pursue my passions in computing and statistics at Kubrick Group as a consultant Machine Learning Engineer. 
+                        </p>
+                        <p class="about-me-para">
+                            I completed a 16-week intensive training course before joining the data and analytics team at Lloyds Bank. During this time I fell in love with all things computing, diving into every rabbit hole I could find ranging from algorithms to operating systems.
+                        </p>
+                        <p class="about-me-para">
+                            In my spare time, when I'm not engrossed in a personal project or online course, I love playing chess and going on surfing trips abroad or to the Bristol Wave.
+                        </p>     
+                    </div>
+                    <img src="/images/matthiscocks.jpg" class="about-me-image" alt="headshot">
+                </div>
+                
+            </section>
+            <section id="work-experience" class="chapter">
+                <div class="chapter-content">
+                    <div class="work-experience-header">
+                            <h2>Work Experience</h2>
+                    </div>
+                    <div class="kubrick-training">
+                        <div class="kubrick-training-text">
+                            <div class="workplace-title">
+                                <p class="workplace-title-text">Kubrick Training</p>
+                                <div class="heading-line"></div>
+                            </div>
+                            <p class="work-experience-description">
+                                The 16 week machine learning engineering course covered topics in data engineering (SQL, Hive, Pyspark), Python, Machine Learning (Scikit-Learn, Numpy, Pytorch), DevOps (Jenkins, MLFlow)
                             </p>
-                            </header>
-                        <footer>
-                            <ul class="project-tech-list">
-                                <li>C++</li>
-                                <li>Python</li>
-                            </ul>
-                        </footer>
+                            <p class="work-experience-description">
+                                We did a group project to programmatically scrape public company performance reports and apply natural language processing to predict the resulting stock price movement based on sentiment analysis.
+                            </p>
+                            <div class="workplace-title">
+                                <p>Lloyds Banking Group</p>
+                                <div class="heading-line"></div>
+                            </div>
+                            <p class="work-experience-description">
+                                Mortages Data Pipeline: A Pyspark pipeline running on a hadoop cluster to curate mortgage data. I learnt about performance tuning and was able to reduce our runtime from over 24 hours to less than 1 hour.
+                            </p>
+                            <p class="work-experience-description">
+                                Data Controls Framework: A framework for defining and running automated tests on data assets. Hosted on Google Cloud Platform, our microservices run on kubernetes, communicate via pub/sub and use BigQuery for the system of insight.
+                            </p>
+                            <p class="work-experience-description">
+                                Side of desk: I have completed the Google Cloud Platform Professional Data Engineer certification. I also lead the software engineering guild in my department and have given talks on Python, Pyspark and Golang.
+                            </p>
+                        </div>
+                        <div class="work-experience-logo-grid">
+                            <img src="/images/logos/python.png" width="100">
+                            <img src="/images/logos/java.png" width="100">
+                            <img src="/images/logos/sql.png" width="100">
+                            <img src="/images/logos/docker.png" width="100">
+                            <img src="/images/logos/spark.png" width="100">
+                            <img src="/images/logos/hadoop.png" width="100">
+                            <img src="/images/logos/kubernetes.png" width="100">
+                            <img src="/images/logos/jenkins.png" width="100">
+                            <img src="/images/logos/bigquery.png" width="100">
                         </div>
                         
-                        </div>
-                    <div class="grid-item">
-                        <div class="project">
-                            <header>
-                            <h3 class="project-title">
-                                Cycle Navigation App
-                            </h3>
-                            <p class="project-description">
-                                An navigation app to allow cyclists to prioritise safety or speed.                            
-                            </p>
-                            </header>
-                            <footer>
-                                <ul class="project-tech-list">
-                                    <li>Python</li>
-                                    <li>Flask</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </footer>
-                        </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="project">
-                            <header>
-                                <h3 class="project-title">
-                                    Advent of Code
-                                </h3>
-                                <p class="project-description">
-                                    A different coding challenge for every day of advent.
-                                </p>
-                            </header>
-                            <footer>
-                                <ul class="project-tech-list">
-                                    <li>Python</li>
-                                </ul>
-                            </footer>
-                        </div>
+                </div>
+            </section>
+            <section id="projects" class="chapter">
+                <div class="chapter-content">
+                    <div>
+                        <h2 class="my-projects-title">
+                            My Personal Projects
+                        </h2>
                     </div>
-                    <div class="grid-item">
-                        <div class="project">
-                            <header>
-                                <h3 class="project-title">
-                                    Chess Engine
-                                </h3>
-                                <p class="project-description">
-                                    A chess engine using the minimax algorithm with alpha-beta pruning.
-                                </p>
-                            </header>
-                            <footer>
-                                <ul class="project-tech-list">
-                                    <li>Python</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </footer>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="project">
+                                <header>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://github.com/matty5567/Mandelbrot">
+                                        <h3 class="project-title">
+                                            Neural Networks From Scratch
+                                        </h3>
+                                    </a>
+                                    <p class="project-description">
+                                        Classifying digits using deep learning written only the standard library.
+                                    </p>
+                                </header>
+                                <footer class="project-footer">
+                                    <ul class="project-tech-list">
+                                        <li>C++</li>
+                                    </ul>
+                                </footer>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="project">
-                            <header>
-                                <h3 class="project-title">
-                                    Arduino Quadcopter
-                                </h3>
+                        <div class="grid-item">
+                            <div class="project">
+                                <header>
+                                <a target="_blank" rel="noreferrer noopener" href="https://github.com/matty5567/Mandelbrot">
+                                    <h3 class="project-title">
+                                        Mandlebrot Renderer
+                                    </h3>
+                                </a>
                                 <p class="project-description">
-                                    Flight Controller for a homemade quadcopter.
+                                    Rendering the Mandlebrot Fractal using parallel threads.
                                 </p>
-                            </header>
+                                </header>
                             <footer>
                                 <ul class="project-tech-list">
                                     <li>C++</li>
+                                    <li>Python</li>
                                 </ul>
                             </footer>
+                            </div>
+                            
+                            </div>
+                        <div class="grid-item">
+                            <div class="project">
+                                <header>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://github.com/matty5567/CyclePaths">
+                                        <h3 class="project-title">
+                                            Cycle Navigation App
+                                        </h3>
+                                    </a>
+                                    <p class="project-description">
+                                        An navigation app to allow cyclists to prioritise safety or speed.                            
+                                    </p>
+                                </header>
+                                <footer>
+                                    <ul class="project-tech-list">
+                                        <li>Python</li>
+                                        <li>Flask</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="project">
+                                <header>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://github.com/matty5567/AdventOfCode2021">
+                                        <h3 class="project-title">
+                                            Advent of Code
+                                        </h3>
+                                    </a>
+                                    <p class="project-description">
+                                        A different coding challenge for every day of advent.
+                                    </p>
+                                </header>
+                                <footer>
+                                    <ul class="project-tech-list">
+                                        <li>Python</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="project">
+                                <header>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://github.com/matty5567/ChessEngineV2">
+                                        <h3 class="project-title">
+                                            Chess Engine
+                                        </h3>
+                                    </a>
+                                    <p class="project-description">
+                                        A chess engine using the minimax algorithm with alpha-beta pruning.
+                                    </p>
+                                </header>
+                                <footer>
+                                    <ul class="project-tech-list">
+                                        <li>Python</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="project">
+                                <header>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://github.com/matty5567/ArduinoQuadcopter">
+                                        <h3 class="project-title">
+                                            Arduino Quadcopter
+                                        </h3>
+                                    </a>
+                                    <p class="project-description">
+                                        Flight Controller for a homemade quadcopter.
+                                    </p>
+                                </header>
+                                <footer>
+                                    <ul class="project-tech-list">
+                                        <li>C++</li>
+                                    </ul>
+                                </footer>
+                            </div>
                         </div>
                     </div>
+            </section>
+            <section id="this-site" class="chapter">
+                <div class="chapter-content">
+                    
+                    <div class="this-site-header">
+                        <h class="this-site-header">About This Site</h>
+                        <div class="heading-line"></div>
+                    </div>
+                    <div class="this-site-content">
+                        <img src="/images/logos/raspberry_pi.jpg" class="pi-image">
+                        <div class="site-desciption">
+                            <p class="site-para-top">
+                            This site is hosted on my raspberry pi!
+                            </p>
+                            <p class="site-para-bottom">
+                                The backend is written in Go, a language I've really enjoyed learning recently. You can view the source code <a target="_blank" rel="noreferrer noopener"href="https://github.com/matty5567/PortfolioWebsite" class="portfolio-code-link">here</a>.
+                            </p>
+                        </div>
+                    </div>    
                 </div>
-        </section>
+            </section>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>

@@ -3,6 +3,7 @@ package main
 import (
 	"html/template"
 	"net/http"
+	"log"
 )
 
 var tpl *template.Template
@@ -17,7 +18,9 @@ func main() {
 	http.Handle("/cv/", http.StripPrefix("/cv/", http.FileServer(http.Dir("cv"))))
 	http.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir("js"))))
 	http.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("images"))))
-	http.ListenAndServe(":8080", nil)
+	if err := http.ListenAndServe(":80", nil); err != nil {
+		log.Fatal("listen and serve: ", err)
+	}
 }
 
 func home(w http.ResponseWriter, r *http.Request) {

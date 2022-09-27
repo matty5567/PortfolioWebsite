@@ -1,5 +1,6 @@
 body {
     background-color: #0a192f;
+    min-width: 1000px;
     margin: 0;
 }
 
@@ -33,13 +34,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     justify-items: center;
+    width: 100%;
 }
 
-.content {
+/* .content {
     display: flex;
     flex-direction: row;
 
-}
+} */
 
 .side-bar{
     position: fixed;
@@ -63,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top:8rem
+    /* margin-top:8rem */
 
 }
 
@@ -78,7 +80,8 @@ body {
     align-content: center;
     flex-direction: column;
     align-items: left;
-    margin: 0 100 0 100;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .work-experience-header {
@@ -275,6 +278,7 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
 }
@@ -327,13 +331,14 @@ li {
 .work-experience-description {
     color: #ccd6f6;
     font-size: 20;
+    margin-bottom: 10px;
 }
 
 .kubrick-training-text {
     margin-right: 40px;
     display: flex;
     flex-direction: column;
-    flex:1.5
+    flex:1.7
 }
 
 .workplace-title {

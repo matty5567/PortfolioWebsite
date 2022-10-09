@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     justify-items: center;
-    width: 100%;
+    margin: 0;
 }
 
 /* .content {
@@ -65,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    /* margin-top:8rem */
+    padding-top: 30;
 
 }
 
@@ -80,8 +80,8 @@ body {
     align-content: center;
     flex-direction: column;
     align-items: left;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .work-experience-header {
@@ -319,8 +319,9 @@ li {
     display: grid;
     flex: 1;
     grid-template-columns: 33% 33% 33%;
-    column-gap:20px;
-    row-gap: 60px;
+    column-gap:10px;
+    row-gap: 30px;
+    /* height: 50vh; */
 }
 
 .work-experience-content {
@@ -338,7 +339,6 @@ li {
     margin-right: 40px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     flex:1.7
 }
 

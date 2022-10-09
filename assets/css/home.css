@@ -330,7 +330,7 @@ li {
 
 .work-experience-description {
     color: #ccd6f6;
-    font-size: 20;
+    font-size: 1vw;
     margin-bottom: 10px;
 }
 
@@ -338,6 +338,7 @@ li {
     margin-right: 40px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     flex:1.7
 }
 
